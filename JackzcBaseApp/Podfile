@@ -1,0 +1,31 @@
+
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'JackzcBaseApp' do
+
+pod 'Alamofire', '~> 4.7'
+pod 'BCColor', '~> 0.2'
+pod 'SwiftyJSON', '~> 4.0'
+pod 'SnapKit', '~> 4.0.0'
+pod 'Kingfisher', '~> 4.0'
+#pod 'RAMAnimatedTabBarController', '~> 2.2.0'
+#pod 'SwiftyUserDefaults'
+#pod 'Charts', '~> 3.0.5'
+#pod 'Onboard', '~> 2.3.1'
+#pod 'GDPerformanceView-Swift', '~> 1.2.0'
+#pod 'FSCalendar'
+#pod 'DeviceKit', '~> 1.4.0'
+#pod 'DZNEmptyDataSet', '~> 1.8.1'
+#pod 'PermissionScope'
+#pod 'Spring', '~> 1.0.5'
+#pod 'Sync', '~> 3.2.3'
+#pod 'Then', '~> 2.3.0'
+#pod 'CocoaLumberjack/Swift'
+#pod 'MagicalRecord'
+#pod 'WoodPeckeriOS', '>= 1.0.3'
+#pod 'RxSwift', '~> 4.1.1'
+#pod 'RxCocoa', '~> 4.1.1'
+
+end

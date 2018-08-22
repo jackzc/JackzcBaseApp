@@ -37,9 +37,9 @@ class SectionSource: Source {
     
 }
 
-class RowSource: Source<ModelType,ViewType>{
-    
-}
+//class RowSource: Source<ModelType,ViewType>{
+//    
+//}
 
 class SectionHeadSource: Source {
     

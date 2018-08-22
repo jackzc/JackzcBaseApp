@@ -21,6 +21,23 @@
 		E846762421119DB50042CC17 /* VariousCellHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846762321119DB50042CC17 /* VariousCellHandle.swift */; };
 		E84676262111B1140042CC17 /* AppBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84676252111B1140042CC17 /* AppBaseViewController.swift */; };
 		E86DA55421158EE100B468B4 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA55321158EE100B468B4 /* Source.swift */; };
+		E8CDF7DD212D5509003AF7CE /* ArchitectureRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7CB212D5509003AF7CE /* ArchitectureRootViewController.swift */; };
+		E8CDF7DE212D5509003AF7CE /* MVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7CD212D5509003AF7CE /* MVCModel.swift */; };
+		E8CDF7DF212D5509003AF7CE /* MVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7CE212D5509003AF7CE /* MVCTableViewCell.swift */; };
+		E8CDF7E0212D5509003AF7CE /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7CF212D5509003AF7CE /* MVCViewController.swift */; };
+		E8CDF7E1212D5509003AF7CE /* CommonDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7D1212D5509003AF7CE /* CommonDataSource.swift */; };
+		E8CDF7E2212D5509003AF7CE /* MVPDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7D2212D5509003AF7CE /* MVPDataSource.swift */; };
+		E8CDF7E3212D5509003AF7CE /* MVPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7D3212D5509003AF7CE /* MVPModel.swift */; };
+		E8CDF7E4212D5509003AF7CE /* MVPPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7D4212D5509003AF7CE /* MVPPresent.swift */; };
+		E8CDF7E5212D5509003AF7CE /* MVPTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7D5212D5509003AF7CE /* MVPTableViewCell.swift */; };
+		E8CDF7E6212D5509003AF7CE /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7D6212D5509003AF7CE /* MVPViewController.swift */; };
+		E8CDF7E7212D5509003AF7CE /* MVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7D8212D5509003AF7CE /* MVModel.swift */; };
+		E8CDF7E8212D5509003AF7CE /* MVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7D9212D5509003AF7CE /* MVTableViewCell.swift */; };
+		E8CDF7E9212D5509003AF7CE /* MVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7DA212D5509003AF7CE /* MVView.swift */; };
+		E8CDF7EA212D5509003AF7CE /* MVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7DB212D5509003AF7CE /* MVViewModel.swift */; };
+		E8CDF7EB212D5509003AF7CE /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7DC212D5509003AF7CE /* MVVMViewController.swift */; };
+		E8CDF7F0212D5510003AF7CE /* FrameWorkRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7ED212D5510003AF7CE /* FrameWorkRootViewController.swift */; };
+		E8CDF7F1212D5510003AF7CE /* RXSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7EF212D5510003AF7CE /* RXSwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +79,23 @@
 		E846762321119DB50042CC17 /* VariousCellHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariousCellHandle.swift; sourceTree = "<group>"; };
 		E84676252111B1140042CC17 /* AppBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBaseViewController.swift; sourceTree = "<group>"; };
 		E86DA55321158EE100B468B4 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		E8CDF7CB212D5509003AF7CE /* ArchitectureRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchitectureRootViewController.swift; sourceTree = "<group>"; };
+		E8CDF7CD212D5509003AF7CE /* MVCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCModel.swift; sourceTree = "<group>"; };
+		E8CDF7CE212D5509003AF7CE /* MVCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCTableViewCell.swift; sourceTree = "<group>"; };
+		E8CDF7CF212D5509003AF7CE /* MVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
+		E8CDF7D1212D5509003AF7CE /* CommonDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDataSource.swift; sourceTree = "<group>"; };
+		E8CDF7D2212D5509003AF7CE /* MVPDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPDataSource.swift; sourceTree = "<group>"; };
+		E8CDF7D3212D5509003AF7CE /* MVPModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPModel.swift; sourceTree = "<group>"; };
+		E8CDF7D4212D5509003AF7CE /* MVPPresent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPPresent.swift; sourceTree = "<group>"; };
+		E8CDF7D5212D5509003AF7CE /* MVPTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPTableViewCell.swift; sourceTree = "<group>"; };
+		E8CDF7D6212D5509003AF7CE /* MVPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
+		E8CDF7D8212D5509003AF7CE /* MVModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVModel.swift; sourceTree = "<group>"; };
+		E8CDF7D9212D5509003AF7CE /* MVTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVTableViewCell.swift; sourceTree = "<group>"; };
+		E8CDF7DA212D5509003AF7CE /* MVView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVView.swift; sourceTree = "<group>"; };
+		E8CDF7DB212D5509003AF7CE /* MVViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVViewModel.swift; sourceTree = "<group>"; };
+		E8CDF7DC212D5509003AF7CE /* MVVMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		E8CDF7ED212D5510003AF7CE /* FrameWorkRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameWorkRootViewController.swift; sourceTree = "<group>"; };
+		E8CDF7EF212D5510003AF7CE /* RXSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXSwiftViewController.swift; sourceTree = "<group>"; };
 		F421608F89B9D10B07177371 /* Pods_JackzcBaseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JackzcBaseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -125,6 +159,8 @@
 		E815AFDB2111535F001E0E10 /* JackzcBaseApp */ = {
 			isa = PBXGroup;
 			children = (
+				E8CDF7EC212D5510003AF7CE /* FrameWork框架 */,
+				E8CDF7CA212D5509003AF7CE /* Architecture架构 */,
 				E846761521117B440042CC17 /* TableView系列 */,
 				E815AFDC2111535F001E0E10 /* AppDelegate.swift */,
 				E815B00A211154B9001E0E10 /* AppRootViewController.swift */,
@@ -173,6 +209,69 @@
 				E86DA55321158EE100B468B4 /* Source.swift */,
 			);
 			path = VariousCellViewController;
+			sourceTree = "<group>";
+		};
+		E8CDF7CA212D5509003AF7CE /* Architecture架构 */ = {
+			isa = PBXGroup;
+			children = (
+				E8CDF7CB212D5509003AF7CE /* ArchitectureRootViewController.swift */,
+				E8CDF7CC212D5509003AF7CE /* MVC */,
+				E8CDF7D0212D5509003AF7CE /* MVP */,
+				E8CDF7D7212D5509003AF7CE /* MVVM */,
+			);
+			path = "Architecture架构";
+			sourceTree = "<group>";
+		};
+		E8CDF7CC212D5509003AF7CE /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				E8CDF7CD212D5509003AF7CE /* MVCModel.swift */,
+				E8CDF7CE212D5509003AF7CE /* MVCTableViewCell.swift */,
+				E8CDF7CF212D5509003AF7CE /* MVCViewController.swift */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		E8CDF7D0212D5509003AF7CE /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				E8CDF7D1212D5509003AF7CE /* CommonDataSource.swift */,
+				E8CDF7D2212D5509003AF7CE /* MVPDataSource.swift */,
+				E8CDF7D3212D5509003AF7CE /* MVPModel.swift */,
+				E8CDF7D4212D5509003AF7CE /* MVPPresent.swift */,
+				E8CDF7D5212D5509003AF7CE /* MVPTableViewCell.swift */,
+				E8CDF7D6212D5509003AF7CE /* MVPViewController.swift */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		E8CDF7D7212D5509003AF7CE /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				E8CDF7D8212D5509003AF7CE /* MVModel.swift */,
+				E8CDF7D9212D5509003AF7CE /* MVTableViewCell.swift */,
+				E8CDF7DA212D5509003AF7CE /* MVView.swift */,
+				E8CDF7DB212D5509003AF7CE /* MVViewModel.swift */,
+				E8CDF7DC212D5509003AF7CE /* MVVMViewController.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		E8CDF7EC212D5510003AF7CE /* FrameWork框架 */ = {
+			isa = PBXGroup;
+			children = (
+				E8CDF7ED212D5510003AF7CE /* FrameWorkRootViewController.swift */,
+				E8CDF7EE212D5510003AF7CE /* RXSwift */,
+			);
+			path = "FrameWork框架";
+			sourceTree = "<group>";
+		};
+		E8CDF7EE212D5510003AF7CE /* RXSwift */ = {
+			isa = PBXGroup;
+			children = (
+				E8CDF7EF212D5510003AF7CE /* RXSwiftViewController.swift */,
+			);
+			path = RXSwift;
 			sourceTree = "<group>";
 		};
 		FD62EFB481B24A7045F34A76 /* Frameworks */ = {
@@ -363,14 +462,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8467620211198110042CC17 /* JackzcBaseAppConst.swift in Sources */,
+				E8CDF7E2212D5509003AF7CE /* MVPDataSource.swift in Sources */,
 				E84676262111B1140042CC17 /* AppBaseViewController.swift in Sources */,
+				E8CDF7E0212D5509003AF7CE /* MVCViewController.swift in Sources */,
 				E846762421119DB50042CC17 /* VariousCellHandle.swift in Sources */,
+				E8CDF7F0212D5510003AF7CE /* FrameWorkRootViewController.swift in Sources */,
+				E8CDF7E5212D5509003AF7CE /* MVPTableViewCell.swift in Sources */,
 				E815B00B211154B9001E0E10 /* AppRootViewController.swift in Sources */,
 				E8467622211198F60042CC17 /* AppBaseNavigationController.swift in Sources */,
+				E8CDF7EB212D5509003AF7CE /* MVVMViewController.swift in Sources */,
+				E8CDF7E7212D5509003AF7CE /* MVModel.swift in Sources */,
 				E86DA55421158EE100B468B4 /* Source.swift in Sources */,
+				E8CDF7DF212D5509003AF7CE /* MVCTableViewCell.swift in Sources */,
+				E8CDF7E9212D5509003AF7CE /* MVView.swift in Sources */,
+				E8CDF7DE212D5509003AF7CE /* MVCModel.swift in Sources */,
+				E8CDF7EA212D5509003AF7CE /* MVViewModel.swift in Sources */,
 				E846761E21118F750042CC17 /* VariousCellViewController.swift in Sources */,
+				E8CDF7DD212D5509003AF7CE /* ArchitectureRootViewController.swift in Sources */,
 				E815AFDD2111535F001E0E10 /* AppDelegate.swift in Sources */,
+				E8CDF7E3212D5509003AF7CE /* MVPModel.swift in Sources */,
+				E8CDF7E8212D5509003AF7CE /* MVTableViewCell.swift in Sources */,
+				E8CDF7E4212D5509003AF7CE /* MVPPresent.swift in Sources */,
 				E846761721117EF10042CC17 /* TableRootViewController.swift in Sources */,
+				E8CDF7E1212D5509003AF7CE /* CommonDataSource.swift in Sources */,
+				E8CDF7F1212D5510003AF7CE /* RXSwiftViewController.swift in Sources */,
+				E8CDF7E6212D5509003AF7CE /* MVPViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

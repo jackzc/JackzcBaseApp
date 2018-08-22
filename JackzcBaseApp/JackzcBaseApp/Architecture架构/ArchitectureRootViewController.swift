@@ -1,26 +1,19 @@
+
 //
-//  AppRootViewController.swift
+//  ArchitectureRootViewController.swift
 //  JackzcBaseApp
 //
-//  Created by silence on 2018/8/1.
+//  Created by silence on 2018/8/14.
 //  Copyright © 2018年 silence. All rights reserved.
 //
 
 import UIKit
-import SnapKit
 
-protocol JackzcViewControllerProtocol {
-    
-}
+class ArchitectureRootViewController: AppBaseViewController {
 
-extension UIViewController:JackzcViewControllerProtocol{
-    
-}
-
-class AppRootViewController: AppBaseViewController {
-    
-    var AppDic:[String: UIViewController.Type] = ["TableView系列":TableRootViewController.self,
-                                                  "架构系列":ArchitectureRootViewController.self,
+    var AppDic:[String: UIViewController.Type] = ["MVC" :MVCViewController.self,
+                                                  "MVP" :MVPViewController.self,
+                                                  "MVVM":MVVMViewController.self,
                                                   "Test":UIViewController.self,
                                                   ]
     var tableArray:[String]{
@@ -28,13 +21,13 @@ class AppRootViewController: AppBaseViewController {
             return self.AppDic.keys.reversed()
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "JackzcBase"
+        self.title = "架构系列"
         self.view.addSubview(tableView)
         self.tableView.snp.makeConstraints { (maker) in
-              maker.edges.equalToSuperview()
+            maker.edges.equalToSuperview()
         }
     }
     
@@ -45,16 +38,15 @@ class AppRootViewController: AppBaseViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "rootBaseCellID")
         return tableView
     }()
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }
 
-extension AppRootViewController:UITableViewDelegate,UITableViewDataSource{
+extension ArchitectureRootViewController:UITableViewDelegate,UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -75,8 +67,8 @@ extension AppRootViewController:UITableViewDelegate,UITableViewDataSource{
         let classType = self.AppDic[self.tableArray[indexPath.row]]
         if let className = classType {
             let vc = className.init()
-            let navigationVC = AppBaseNavigationController(rootViewController: vc)
-            App.keyWindow?.rootViewController = navigationVC
+            self.navigationController?.pushViewController(vc, animated: true)
         };
     }
 }
+

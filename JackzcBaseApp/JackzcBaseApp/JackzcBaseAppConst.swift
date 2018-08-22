@@ -10,3 +10,5 @@ import UIKit
 
 let App = UIApplication.shared
 let JackzcAppDelegate = UIApplication.shared.delegate as! AppDelegate
+
+let AppWidth = UIScreen.main.bounds.width

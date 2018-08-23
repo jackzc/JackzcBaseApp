@@ -23,6 +23,7 @@
 		E86DA55421158EE100B468B4 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA55321158EE100B468B4 /* Source.swift */; };
 		E891FD69212E7D9E003FD09D /* DesignPatternRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891FD68212E7D9E003FD09D /* DesignPatternRootViewController.swift */; };
 		E891FD6B212E8242003FD09D /* AppBaseRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891FD6A212E8242003FD09D /* AppBaseRootViewController.swift */; };
+		E891FD6E212E88B7003FD09D /* TemplatePatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891FD6D212E88B7003FD09D /* TemplatePatternViewController.swift */; };
 		E8CDF7DD212D5509003AF7CE /* ArchitectureRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7CB212D5509003AF7CE /* ArchitectureRootViewController.swift */; };
 		E8CDF7DE212D5509003AF7CE /* MVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7CD212D5509003AF7CE /* MVCModel.swift */; };
 		E8CDF7DF212D5509003AF7CE /* MVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7CE212D5509003AF7CE /* MVCTableViewCell.swift */; };
@@ -83,6 +84,7 @@
 		E86DA55321158EE100B468B4 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		E891FD68212E7D9E003FD09D /* DesignPatternRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternRootViewController.swift; sourceTree = "<group>"; };
 		E891FD6A212E8242003FD09D /* AppBaseRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBaseRootViewController.swift; sourceTree = "<group>"; };
+		E891FD6D212E88B7003FD09D /* TemplatePatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePatternViewController.swift; sourceTree = "<group>"; };
 		E8CDF7CB212D5509003AF7CE /* ArchitectureRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchitectureRootViewController.swift; sourceTree = "<group>"; };
 		E8CDF7CD212D5509003AF7CE /* MVCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCModel.swift; sourceTree = "<group>"; };
 		E8CDF7CE212D5509003AF7CE /* MVCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCTableViewCell.swift; sourceTree = "<group>"; };
@@ -221,8 +223,17 @@
 			isa = PBXGroup;
 			children = (
 				E891FD68212E7D9E003FD09D /* DesignPatternRootViewController.swift */,
+				E891FD6C212E8886003FD09D /* Template */,
 			);
 			path = "DesignPattern基础";
+			sourceTree = "<group>";
+		};
+		E891FD6C212E8886003FD09D /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				E891FD6D212E88B7003FD09D /* TemplatePatternViewController.swift */,
+			);
+			path = Template;
 			sourceTree = "<group>";
 		};
 		E8CDF7CA212D5509003AF7CE /* Architecture架构 */ = {
@@ -480,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8467620211198110042CC17 /* JackzcBaseAppConst.swift in Sources */,
+				E891FD6E212E88B7003FD09D /* TemplatePatternViewController.swift in Sources */,
 				E8CDF7E2212D5509003AF7CE /* MVPDataSource.swift in Sources */,
 				E84676262111B1140042CC17 /* AppBaseViewController.swift in Sources */,
 				E8CDF7E0212D5509003AF7CE /* MVCViewController.swift in Sources */,

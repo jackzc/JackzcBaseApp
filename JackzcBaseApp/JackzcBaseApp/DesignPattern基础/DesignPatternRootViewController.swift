@@ -10,28 +10,25 @@
 
 import UIKit
 
-class DesignPatternRootViewController: AppBaseViewController {
-
+class DesignPatternRootViewController: AppBaseRootViewController {
+    
+    override var vcTitle: String{
+        set{}
+        get{
+            return "设计模式"
+        }
+    }
+    override var AppDic: [String : AppBaseViewController.Type]{
+        set{}
+        get{
+            return ["模板模式":TemplatePatternViewController.self]
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -13,7 +13,7 @@ import UIKit
 class FrameWorkRootViewController: AppBaseViewController {
 
     var AppDic:[String: UIViewController.Type] = ["RXSwift" :RXSwiftViewController.self,
-                                                  "Test":UIViewController.self,
+                                                  "Test":AppBaseViewController.self,
                                                   ]
     var tableArray:[String]{
         get{

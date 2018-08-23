@@ -14,7 +14,7 @@ class ArchitectureRootViewController: AppBaseViewController {
     var AppDic:[String: UIViewController.Type] = ["MVC" :MVCViewController.self,
                                                   "MVP" :MVPViewController.self,
                                                   "MVVM":MVVMViewController.self,
-                                                  "Test":UIViewController.self,
+                                                  "Test":AppBaseViewController.self,
                                                   ]
     var tableArray:[String]{
         get{

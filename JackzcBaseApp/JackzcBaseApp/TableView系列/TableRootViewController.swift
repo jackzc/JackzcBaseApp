@@ -12,7 +12,7 @@ import UIKit
 class TableRootViewController: AppBaseViewController {
 
     var AppDic:[String: UIViewController.Type] = ["复杂表格表视图":VariousCellViewController.self,
-                                                  "Test":UIViewController.self,
+                                                  "Test":AppBaseViewController.self,
                                                   ]
     var tableArray:[String]{
         get{

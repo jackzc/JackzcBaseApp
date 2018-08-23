@@ -20,7 +20,6 @@ class MVPViewController: AppBaseViewController {
         }
         
         present.refreshData()
-//        dataSource.dataArray.append(contentsOf: present.dataArray)
         dataSource.dataArray = present.dataArray
         tableView.dataSource = dataSource
         tableView.reloadData()

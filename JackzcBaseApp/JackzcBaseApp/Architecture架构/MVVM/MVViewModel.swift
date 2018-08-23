@@ -11,8 +11,9 @@ import UIKit
 
 class MVViewModel: NSObject{
     
-    var contentKey:String = ""
+    @objc dynamic var contentKey:String = ""
     var dataArray:[MVModel] = []
+    var didChange:(()->Void)?
     
     override init() {
         super.init()
@@ -39,6 +40,23 @@ class MVViewModel: NSObject{
             
             DispatchQueue.main.sync {
                  complete(self.dataArray)
+            }
+        }
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if let change = change{
+            let content = change[.newKey] as! String
+            for index in  0 ..< self.dataArray.count{
+                let model = self.dataArray[index]
+                if model.title == content{
+                   self.dataArray.remove(at: index)
+                   self.dataArray.insert(model, at: 0)
+                    if let block = self.didChange{
+                       block()
+                    }
+                   break
+                }
             }
         }
     }

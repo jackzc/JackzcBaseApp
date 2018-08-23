@@ -25,7 +25,8 @@ class MVTableViewCell: UITableViewCell {
             maker.left.equalToSuperview().offset(20)
             maker.top.equalToSuperview().offset(10)
             maker.bottom.equalToSuperview().offset(-10)
-            maker.size.equalTo(CGSize(width: 100, height: 50))
+            maker.width.equalTo(100)
+            maker.height.equalTo(30)
         }
     }
     

@@ -21,6 +21,8 @@
 		E846762421119DB50042CC17 /* VariousCellHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846762321119DB50042CC17 /* VariousCellHandle.swift */; };
 		E84676262111B1140042CC17 /* AppBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84676252111B1140042CC17 /* AppBaseViewController.swift */; };
 		E86DA55421158EE100B468B4 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA55321158EE100B468B4 /* Source.swift */; };
+		E891FD69212E7D9E003FD09D /* DesignPatternRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891FD68212E7D9E003FD09D /* DesignPatternRootViewController.swift */; };
+		E891FD6B212E8242003FD09D /* AppBaseRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891FD6A212E8242003FD09D /* AppBaseRootViewController.swift */; };
 		E8CDF7DD212D5509003AF7CE /* ArchitectureRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7CB212D5509003AF7CE /* ArchitectureRootViewController.swift */; };
 		E8CDF7DE212D5509003AF7CE /* MVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7CD212D5509003AF7CE /* MVCModel.swift */; };
 		E8CDF7DF212D5509003AF7CE /* MVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CDF7CE212D5509003AF7CE /* MVCTableViewCell.swift */; };
@@ -79,6 +81,8 @@
 		E846762321119DB50042CC17 /* VariousCellHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariousCellHandle.swift; sourceTree = "<group>"; };
 		E84676252111B1140042CC17 /* AppBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBaseViewController.swift; sourceTree = "<group>"; };
 		E86DA55321158EE100B468B4 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		E891FD68212E7D9E003FD09D /* DesignPatternRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternRootViewController.swift; sourceTree = "<group>"; };
+		E891FD6A212E8242003FD09D /* AppBaseRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBaseRootViewController.swift; sourceTree = "<group>"; };
 		E8CDF7CB212D5509003AF7CE /* ArchitectureRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchitectureRootViewController.swift; sourceTree = "<group>"; };
 		E8CDF7CD212D5509003AF7CE /* MVCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCModel.swift; sourceTree = "<group>"; };
 		E8CDF7CE212D5509003AF7CE /* MVCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCTableViewCell.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 		E815AFDB2111535F001E0E10 /* JackzcBaseApp */ = {
 			isa = PBXGroup;
 			children = (
+				E891FD67212E7D17003FD09D /* DesignPattern基础 */,
 				E8CDF7EC212D5510003AF7CE /* FrameWork框架 */,
 				E8CDF7CA212D5509003AF7CE /* Architecture架构 */,
 				E846761521117B440042CC17 /* TableView系列 */,
@@ -166,6 +171,7 @@
 				E815B00A211154B9001E0E10 /* AppRootViewController.swift */,
 				E8467621211198F60042CC17 /* AppBaseNavigationController.swift */,
 				E84676252111B1140042CC17 /* AppBaseViewController.swift */,
+				E891FD6A212E8242003FD09D /* AppBaseRootViewController.swift */,
 				E846761F211198110042CC17 /* JackzcBaseAppConst.swift */,
 				E815AFE321115365001E0E10 /* Assets.xcassets */,
 				E815AFE521115365001E0E10 /* LaunchScreen.storyboard */,
@@ -209,6 +215,14 @@
 				E86DA55321158EE100B468B4 /* Source.swift */,
 			);
 			path = VariousCellViewController;
+			sourceTree = "<group>";
+		};
+		E891FD67212E7D17003FD09D /* DesignPattern基础 */ = {
+			isa = PBXGroup;
+			children = (
+				E891FD68212E7D9E003FD09D /* DesignPatternRootViewController.swift */,
+			);
+			path = "DesignPattern基础";
 			sourceTree = "<group>";
 		};
 		E8CDF7CA212D5509003AF7CE /* Architecture架构 */ = {
@@ -470,6 +484,7 @@
 				E84676262111B1140042CC17 /* AppBaseViewController.swift in Sources */,
 				E8CDF7E0212D5509003AF7CE /* MVCViewController.swift in Sources */,
 				E846762421119DB50042CC17 /* VariousCellHandle.swift in Sources */,
+				E891FD69212E7D9E003FD09D /* DesignPatternRootViewController.swift in Sources */,
 				E8CDF7F0212D5510003AF7CE /* FrameWorkRootViewController.swift in Sources */,
 				E8CDF7E5212D5509003AF7CE /* MVPTableViewCell.swift in Sources */,
 				E815B00B211154B9001E0E10 /* AppRootViewController.swift in Sources */,
@@ -485,6 +500,7 @@
 				E8CDF7DD212D5509003AF7CE /* ArchitectureRootViewController.swift in Sources */,
 				E815AFDD2111535F001E0E10 /* AppDelegate.swift in Sources */,
 				E8CDF7E3212D5509003AF7CE /* MVPModel.swift in Sources */,
+				E891FD6B212E8242003FD09D /* AppBaseRootViewController.swift in Sources */,
 				E8CDF7E8212D5509003AF7CE /* MVTableViewCell.swift in Sources */,
 				E8CDF7E4212D5509003AF7CE /* MVPPresent.swift in Sources */,
 				E846761721117EF10042CC17 /* TableRootViewController.swift in Sources */,
@@ -658,7 +674,9 @@
 			baseConfigurationReference = CBDD4744814C30651F5A6CBC /* Pods-JackzcBaseApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF3FXM58ZE;
 				INFOPLIST_FILE = JackzcBaseApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -677,7 +695,9 @@
 			baseConfigurationReference = 5FD8412DB98737F7EC290B87 /* Pods-JackzcBaseApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF3FXM58ZE;
 				INFOPLIST_FILE = JackzcBaseApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

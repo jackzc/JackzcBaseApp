@@ -9,19 +9,13 @@
 import UIKit
 import SnapKit
 
-protocol JackzcViewControllerProtocol {
-    
-}
-
-extension UIViewController:JackzcViewControllerProtocol{
-    
-}
-
 class AppRootViewController: AppBaseViewController {
     
     var AppDic:[String: UIViewController.Type] = ["TableView系列":TableRootViewController.self,
                                                   "架构系列":ArchitectureRootViewController.self,
-                                                  "Test":UIViewController.self,
+                                                  "常用框架":FrameWorkRootViewController.self,
+                                                  "设计模式":DesignPatternRootViewController.self,
+                                                  "Test":AppBaseViewController.self
                                                   ]
     var tableArray:[String]{
         get{
@@ -49,7 +43,6 @@ class AppRootViewController: AppBaseViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }
@@ -75,6 +68,7 @@ extension AppRootViewController:UITableViewDelegate,UITableViewDataSource{
         let classType = self.AppDic[self.tableArray[indexPath.row]]
         if let className = classType {
             let vc = className.init()
+            vc.title = self.tableArray[indexPath.row]
             let navigationVC = AppBaseNavigationController(rootViewController: vc)
             App.keyWindow?.rootViewController = navigationVC
         };

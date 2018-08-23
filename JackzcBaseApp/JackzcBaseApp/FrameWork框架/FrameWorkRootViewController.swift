@@ -12,26 +12,61 @@ import UIKit
 
 class FrameWorkRootViewController: AppBaseViewController {
 
+    var AppDic:[String: UIViewController.Type] = ["RXSwift" :RXSwiftViewController.self,
+                                                  "Test":UIViewController.self,
+                                                  ]
+    var tableArray:[String]{
+        get{
+            return self.AppDic.keys.reversed()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.title = "框架系列"
+        self.view.addSubview(tableView)
+        self.tableView.snp.makeConstraints { (maker) in
+            maker.edges.equalToSuperview()
+        }
     }
-
+    
+    lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .grouped)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "rootBaseCellID")
+        return tableView
+    }()
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+}
+
+extension FrameWorkRootViewController:UITableViewDelegate,UITableViewDataSource{
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.tableArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "rootBaseCellID")
+        cell?.selectionStyle = .none
+        cell?.textLabel?.text = self.tableArray[indexPath.row]
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let classType = self.AppDic[self.tableArray[indexPath.row]]
+        if let className = classType {
+            let vc = className.init()
+            self.navigationController?.pushViewController(vc, animated: true)
+        };
+    }
 }

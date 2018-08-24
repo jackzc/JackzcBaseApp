@@ -21,6 +21,8 @@
 		E846762421119DB50042CC17 /* VariousCellHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846762321119DB50042CC17 /* VariousCellHandle.swift */; };
 		E84676262111B1140042CC17 /* AppBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84676252111B1140042CC17 /* AppBaseViewController.swift */; };
 		E86DA55421158EE100B468B4 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA55321158EE100B468B4 /* Source.swift */; };
+		E86FD011212FADA100CEC9A1 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86FD010212FADA100CEC9A1 /* UITableView+Extension.swift */; };
+		E86FD013212FADE200CEC9A1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86FD012212FADE200CEC9A1 /* String+Extension.swift */; };
 		E891FD69212E7D9E003FD09D /* DesignPatternRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891FD68212E7D9E003FD09D /* DesignPatternRootViewController.swift */; };
 		E891FD6B212E8242003FD09D /* AppBaseRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891FD6A212E8242003FD09D /* AppBaseRootViewController.swift */; };
 		E891FD6E212E88B7003FD09D /* TemplatePatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891FD6D212E88B7003FD09D /* TemplatePatternViewController.swift */; };
@@ -82,6 +84,8 @@
 		E846762321119DB50042CC17 /* VariousCellHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariousCellHandle.swift; sourceTree = "<group>"; };
 		E84676252111B1140042CC17 /* AppBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBaseViewController.swift; sourceTree = "<group>"; };
 		E86DA55321158EE100B468B4 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		E86FD010212FADA100CEC9A1 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		E86FD012212FADE200CEC9A1 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		E891FD68212E7D9E003FD09D /* DesignPatternRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternRootViewController.swift; sourceTree = "<group>"; };
 		E891FD6A212E8242003FD09D /* AppBaseRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBaseRootViewController.swift; sourceTree = "<group>"; };
 		E891FD6D212E88B7003FD09D /* TemplatePatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePatternViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 		E815AFDB2111535F001E0E10 /* JackzcBaseApp */ = {
 			isa = PBXGroup;
 			children = (
+				E86FD00F212FAD4D00CEC9A1 /* Foundation+Category */,
+				E86FD00E212FACF800CEC9A1 /* UIKit+Category */,
 				E891FD67212E7D17003FD09D /* DesignPattern基础 */,
 				E8CDF7EC212D5510003AF7CE /* FrameWork框架 */,
 				E8CDF7CA212D5509003AF7CE /* Architecture架构 */,
@@ -217,6 +223,22 @@
 				E86DA55321158EE100B468B4 /* Source.swift */,
 			);
 			path = VariousCellViewController;
+			sourceTree = "<group>";
+		};
+		E86FD00E212FACF800CEC9A1 /* UIKit+Category */ = {
+			isa = PBXGroup;
+			children = (
+				E86FD010212FADA100CEC9A1 /* UITableView+Extension.swift */,
+			);
+			path = "UIKit+Category";
+			sourceTree = "<group>";
+		};
+		E86FD00F212FAD4D00CEC9A1 /* Foundation+Category */ = {
+			isa = PBXGroup;
+			children = (
+				E86FD012212FADE200CEC9A1 /* String+Extension.swift */,
+			);
+			path = "Foundation+Category";
 			sourceTree = "<group>";
 		};
 		E891FD67212E7D17003FD09D /* DesignPattern基础 */ = {
@@ -497,6 +519,7 @@
 				E8CDF7E0212D5509003AF7CE /* MVCViewController.swift in Sources */,
 				E846762421119DB50042CC17 /* VariousCellHandle.swift in Sources */,
 				E891FD69212E7D9E003FD09D /* DesignPatternRootViewController.swift in Sources */,
+				E86FD013212FADE200CEC9A1 /* String+Extension.swift in Sources */,
 				E8CDF7F0212D5510003AF7CE /* FrameWorkRootViewController.swift in Sources */,
 				E8CDF7E5212D5509003AF7CE /* MVPTableViewCell.swift in Sources */,
 				E815B00B211154B9001E0E10 /* AppRootViewController.swift in Sources */,
@@ -507,6 +530,7 @@
 				E8CDF7DF212D5509003AF7CE /* MVCTableViewCell.swift in Sources */,
 				E8CDF7E9212D5509003AF7CE /* MVView.swift in Sources */,
 				E8CDF7DE212D5509003AF7CE /* MVCModel.swift in Sources */,
+				E86FD011212FADA100CEC9A1 /* UITableView+Extension.swift in Sources */,
 				E8CDF7EA212D5509003AF7CE /* MVViewModel.swift in Sources */,
 				E846761E21118F750042CC17 /* VariousCellViewController.swift in Sources */,
 				E8CDF7DD212D5509003AF7CE /* ArchitectureRootViewController.swift in Sources */,

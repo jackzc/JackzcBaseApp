@@ -54,7 +54,7 @@ extension RXSwiftViewController{
         
         typealias JSON = Any
         let json:Observable<JSON> = Observable.create { (observer) -> Disposable in
-            let task = URLSession.shared.dataTask(with: URL(fileURLWithPath: ""), completionHandler: { (data, reponse, error) in
+            let task = URLSession.shared.dataTask(with: URL(fileURLWithPath: "https://www.douban.com/j/app/radio/channels"), completionHandler: { (data, reponse, error) in
                 guard error == nil else{
                     observer.onError(error!)
                     return

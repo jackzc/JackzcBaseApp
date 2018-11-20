@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6EA31896EE0823F379648CB7 /* Pods_JackzcBaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F421608F89B9D10B07177371 /* Pods_JackzcBaseApp.framework */; };
+		7A01780121A02B6B000BC160 /* HybridAppRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01780021A02B6B000BC160 /* HybridAppRootViewController.swift */; };
+		7A01780421A3BD6D000BC160 /* SJWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01780321A3BD6D000BC160 /* SJWebViewViewController.swift */; };
 		E815AFDD2111535F001E0E10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815AFDC2111535F001E0E10 /* AppDelegate.swift */; };
 		E815AFE421115365001E0E10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E815AFE321115365001E0E10 /* Assets.xcassets */; };
 		E815AFE721115365001E0E10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E815AFE521115365001E0E10 /* LaunchScreen.storyboard */; };
@@ -64,6 +66,8 @@
 
 /* Begin PBXFileReference section */
 		5FD8412DB98737F7EC290B87 /* Pods-JackzcBaseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JackzcBaseApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JackzcBaseApp/Pods-JackzcBaseApp.release.xcconfig"; sourceTree = "<group>"; };
+		7A01780021A02B6B000BC160 /* HybridAppRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridAppRootViewController.swift; sourceTree = "<group>"; };
+		7A01780321A3BD6D000BC160 /* SJWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJWebViewViewController.swift; sourceTree = "<group>"; };
 		CBDD4744814C30651F5A6CBC /* Pods-JackzcBaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JackzcBaseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JackzcBaseApp/Pods-JackzcBaseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E815AFD92111535F001E0E10 /* JackzcBaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JackzcBaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E815AFDC2111535F001E0E10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +139,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A0177FB21A02559000BC160 /* HybridApp技术 */ = {
+			isa = PBXGroup;
+			children = (
+				7A01780221A293BC000BC160 /* Swift<->JS */,
+				7A01780021A02B6B000BC160 /* HybridAppRootViewController.swift */,
+			);
+			path = "HybridApp技术";
+			sourceTree = "<group>";
+		};
+		7A01780221A293BC000BC160 /* Swift<->JS */ = {
+			isa = PBXGroup;
+			children = (
+				7A01780321A3BD6D000BC160 /* SJWebViewViewController.swift */,
+			);
+			path = "Swift<->JS";
+			sourceTree = "<group>";
+		};
 		E396FE09BBA211E69A32118B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +196,7 @@
 				E8CDF7EC212D5510003AF7CE /* FrameWork框架 */,
 				E8CDF7CA212D5509003AF7CE /* Architecture架构 */,
 				E846761521117B440042CC17 /* TableView系列 */,
+				7A0177FB21A02559000BC160 /* HybridApp技术 */,
 				E815AFDC2111535F001E0E10 /* AppDelegate.swift */,
 				E815B00A211154B9001E0E10 /* AppRootViewController.swift */,
 				E8467621211198F60042CC17 /* AppBaseNavigationController.swift */,
@@ -399,6 +421,7 @@
 				TargetAttributes = {
 					E815AFD82111535F001E0E10 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					E815AFEC21115365001E0E10 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -518,6 +541,8 @@
 				E84676262111B1140042CC17 /* AppBaseViewController.swift in Sources */,
 				E8CDF7E0212D5509003AF7CE /* MVCViewController.swift in Sources */,
 				E846762421119DB50042CC17 /* VariousCellHandle.swift in Sources */,
+				7A01780121A02B6B000BC160 /* HybridAppRootViewController.swift in Sources */,
+				7A01780421A3BD6D000BC160 /* SJWebViewViewController.swift in Sources */,
 				E891FD69212E7D9E003FD09D /* DesignPatternRootViewController.swift in Sources */,
 				E86FD013212FADE200CEC9A1 /* String+Extension.swift in Sources */,
 				E8CDF7F0212D5510003AF7CE /* FrameWorkRootViewController.swift in Sources */,
@@ -711,6 +736,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GF3FXM58ZE;
 				INFOPLIST_FILE = JackzcBaseApp/Info.plist;
@@ -732,6 +758,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GF3FXM58ZE;
 				INFOPLIST_FILE = JackzcBaseApp/Info.plist;

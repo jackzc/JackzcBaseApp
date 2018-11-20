@@ -1,27 +1,29 @@
 
 //
-//  TableRootViewController.swift
+//  HybridAppRootViewController.swift
 //  JackzcBaseApp
 //
-//  Created by silence on 2018/8/1.
+//  Created by zouchao on 2018/11/17.
 //  Copyright © 2018年 silence. All rights reserved.
 //
 
 import UIKit
 
-class TableRootViewController: AppBaseRootViewController {
-    
+class HybridAppRootViewController: AppBaseRootViewController {
+
     override var vcTitle: String{
         set{}
         get{
-            return "表视图系列"
+            return "混合模式开发"
         }
     }
     
     override var AppDic: [String : AppBaseViewController.Type]{
         set{}
         get{
-            return ["1.复杂表格表视图":VariousCellViewController.self,
+            return ["1.Swift<->JS":AppBaseViewController.self,
+                    "2.ReactNative":AppBaseViewController.self,
+                    "3.Flutter":AppBaseViewController.self,
                     "Test":AppBaseViewController.self]
         }
     }
@@ -34,16 +36,11 @@ class TableRootViewController: AppBaseRootViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         };
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Do any additional setup after loading the view.
     }
 
 }
-

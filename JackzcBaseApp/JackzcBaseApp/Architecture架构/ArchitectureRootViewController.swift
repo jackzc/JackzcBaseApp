@@ -9,36 +9,38 @@
 
 import UIKit
 
-class ArchitectureRootViewController: AppBaseViewController {
-
-    var AppDic:[String: UIViewController.Type] = ["MVC" :MVCViewController.self,
-                                                  "MVP" :MVPViewController.self,
-                                                  "MVVM":MVVMViewController.self,
-                                                  "Test":AppBaseViewController.self,
-                                                  ]
-    var tableArray:[String]{
+class ArchitectureRootViewController: AppBaseRootViewController {
+    
+    override var vcTitle: String{
+        set{}
         get{
-            return self.AppDic.keys.reversed()
+            return "架构系列"
         }
+    }
+    override var AppDic: [String : AppBaseViewController.Type]{
+        set{}
+        get{
+            return ["1.MVC" :MVCViewController.self,
+                    "2.MVP" :MVPViewController.self,
+                    "3.MVVM":MVVMViewController.self,
+                    "Test":AppBaseViewController.self]
+        }
+    }
+    
+    override func didSelectItemInTableViewAtRow(_ indexPath: IndexPath) {
+        let classType = self.AppDic[self.tableArray[indexPath.row]]
+        if let className = classType {
+            let vc = className.init()
+            vc.title = self.tableArray[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+        };
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "架构系列"
-        self.view.addSubview(tableView)
-        self.tableView.snp.makeConstraints { (maker) in
-            maker.edges.equalToSuperview()
-        }
+       
     }
     
-    lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "rootBaseCellID")
-        return tableView
-    }()
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -46,29 +48,4 @@ class ArchitectureRootViewController: AppBaseViewController {
     
 }
 
-extension ArchitectureRootViewController:UITableViewDelegate,UITableViewDataSource{
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.tableArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "rootBaseCellID")
-        cell?.selectionStyle = .none
-        cell?.textLabel?.text = self.tableArray[indexPath.row]
-        return cell!
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let classType = self.AppDic[self.tableArray[indexPath.row]]
-        if let className = classType {
-            let vc = className.init()
-            self.navigationController?.pushViewController(vc, animated: true)
-        };
-    }
-}
 

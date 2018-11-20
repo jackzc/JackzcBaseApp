@@ -1,7 +1,3 @@
-
-
-
-
 //
 //  AppBaseRootViewController.swift
 //  JackzcBaseApp
@@ -14,20 +10,23 @@ import UIKit
 
 protocol JackzcViewControllerProtocol {
      var vcTitle:String{get}
-     var AppDic:[String: UIViewController.Type]{get}
-     func titleForCurrentViewController() -> Void
-     func tableDicForCurrentViewController() -> Void
+     var AppDic:[String: AppBaseViewController.Type]{get}
+     func didSelectItemInTableViewAtRow(_ indexPath: IndexPath)
 }
 
-class AppBaseRootViewController: AppBaseViewController {
+class AppBaseRootViewController: AppBaseViewController,JackzcViewControllerProtocol {
     
     var vcTitle: String = "testVC"
     var AppDic: [String : AppBaseViewController.Type] = ["Test":AppBaseViewController.self]
     
     var tableArray:[String]{
         get{
-            return self.AppDic.keys.reversed()
+            return self.AppDic.keys.sorted()
         }
+    }
+    
+    func didSelectItemInTableViewAtRow(_ indexPath: IndexPath) {
+        
     }
     
     override func viewDidLoad() {
@@ -71,12 +70,7 @@ extension AppBaseRootViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let classType = self.AppDic[self.tableArray[indexPath.row]]
-        if let className = classType {
-            let vc = className.init()
-            vc.title = self.tableArray[indexPath.row]
-            let navigationVC = AppBaseNavigationController(rootViewController: vc)
-            App.keyWindow?.rootViewController = navigationVC
-        };
+         self.didSelectItemInTableViewAtRow(indexPath)
+        
     }
 }

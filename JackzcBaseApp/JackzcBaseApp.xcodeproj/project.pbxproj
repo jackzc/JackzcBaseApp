@@ -9,7 +9,14 @@
 /* Begin PBXBuildFile section */
 		6EA31896EE0823F379648CB7 /* Pods_JackzcBaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F421608F89B9D10B07177371 /* Pods_JackzcBaseApp.framework */; };
 		7A01780121A02B6B000BC160 /* HybridAppRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01780021A02B6B000BC160 /* HybridAppRootViewController.swift */; };
-		7A01780421A3BD6D000BC160 /* SJWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01780321A3BD6D000BC160 /* SJWebViewViewController.swift */; };
+		7A01780421A3BD6D000BC160 /* UIWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01780321A3BD6D000BC160 /* UIWebViewViewController.swift */; };
+		7A01780621A3F6A5000BC160 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 7A01780521A3F6A5000BC160 /* index.html */; };
+		7A01780821A441B9000BC160 /* UIWebView2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01780721A441B9000BC160 /* UIWebView2ViewController.swift */; };
+		7A01780A21A44246000BC160 /* index2.html in Resources */ = {isa = PBXBuildFile; fileRef = 7A01780921A44245000BC160 /* index2.html */; };
+		7A01780C21A4425E000BC160 /* index3.html in Resources */ = {isa = PBXBuildFile; fileRef = 7A01780B21A4425E000BC160 /* index3.html */; };
+		7A01780F21A44275000BC160 /* UIWebView3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01780E21A44275000BC160 /* UIWebView3ViewController.swift */; };
+		7A985C9B21CCD3A900A333F2 /* SwiftBaseRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A985C9A21CCD3A900A333F2 /* SwiftBaseRootViewController.swift */; };
+		7A985C9D21CCD3F800A333F2 /* MethodSwizzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A985C9C21CCD3F800A333F2 /* MethodSwizzleViewController.swift */; };
 		E815AFDD2111535F001E0E10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815AFDC2111535F001E0E10 /* AppDelegate.swift */; };
 		E815AFE421115365001E0E10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E815AFE321115365001E0E10 /* Assets.xcassets */; };
 		E815AFE721115365001E0E10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E815AFE521115365001E0E10 /* LaunchScreen.storyboard */; };
@@ -67,7 +74,14 @@
 /* Begin PBXFileReference section */
 		5FD8412DB98737F7EC290B87 /* Pods-JackzcBaseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JackzcBaseApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JackzcBaseApp/Pods-JackzcBaseApp.release.xcconfig"; sourceTree = "<group>"; };
 		7A01780021A02B6B000BC160 /* HybridAppRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridAppRootViewController.swift; sourceTree = "<group>"; };
-		7A01780321A3BD6D000BC160 /* SJWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJWebViewViewController.swift; sourceTree = "<group>"; };
+		7A01780321A3BD6D000BC160 /* UIWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewViewController.swift; sourceTree = "<group>"; };
+		7A01780521A3F6A5000BC160 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		7A01780721A441B9000BC160 /* UIWebView2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebView2ViewController.swift; sourceTree = "<group>"; };
+		7A01780921A44245000BC160 /* index2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index2.html; sourceTree = "<group>"; };
+		7A01780B21A4425E000BC160 /* index3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index3.html; sourceTree = "<group>"; };
+		7A01780E21A44275000BC160 /* UIWebView3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebView3ViewController.swift; sourceTree = "<group>"; };
+		7A985C9A21CCD3A900A333F2 /* SwiftBaseRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBaseRootViewController.swift; sourceTree = "<group>"; };
+		7A985C9C21CCD3F800A333F2 /* MethodSwizzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodSwizzleViewController.swift; sourceTree = "<group>"; };
 		CBDD4744814C30651F5A6CBC /* Pods-JackzcBaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JackzcBaseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JackzcBaseApp/Pods-JackzcBaseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E815AFD92111535F001E0E10 /* JackzcBaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JackzcBaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E815AFDC2111535F001E0E10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,9 +165,31 @@
 		7A01780221A293BC000BC160 /* Swift<->JS */ = {
 			isa = PBXGroup;
 			children = (
-				7A01780321A3BD6D000BC160 /* SJWebViewViewController.swift */,
+				7A01780521A3F6A5000BC160 /* index.html */,
+				7A01780921A44245000BC160 /* index2.html */,
+				7A01780B21A4425E000BC160 /* index3.html */,
+				7A01780321A3BD6D000BC160 /* UIWebViewViewController.swift */,
+				7A01780721A441B9000BC160 /* UIWebView2ViewController.swift */,
+				7A01780E21A44275000BC160 /* UIWebView3ViewController.swift */,
 			);
 			path = "Swift<->JS";
+			sourceTree = "<group>";
+		};
+		7A985C9921CCD31400A333F2 /* SwiftBase基础 */ = {
+			isa = PBXGroup;
+			children = (
+				7A985C9E21CCD41600A333F2 /* MethodSwizzle */,
+				7A985C9A21CCD3A900A333F2 /* SwiftBaseRootViewController.swift */,
+			);
+			path = "SwiftBase基础";
+			sourceTree = "<group>";
+		};
+		7A985C9E21CCD41600A333F2 /* MethodSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				7A985C9C21CCD3F800A333F2 /* MethodSwizzleViewController.swift */,
+			);
+			path = MethodSwizzle;
 			sourceTree = "<group>";
 		};
 		E396FE09BBA211E69A32118B /* Pods */ = {
@@ -190,6 +226,7 @@
 		E815AFDB2111535F001E0E10 /* JackzcBaseApp */ = {
 			isa = PBXGroup;
 			children = (
+				7A985C9921CCD31400A333F2 /* SwiftBase基础 */,
 				E86FD00F212FAD4D00CEC9A1 /* Foundation+Category */,
 				E86FD00E212FACF800CEC9A1 /* UIKit+Category */,
 				E891FD67212E7D17003FD09D /* DesignPattern基础 */,
@@ -267,17 +304,17 @@
 			isa = PBXGroup;
 			children = (
 				E891FD68212E7D9E003FD09D /* DesignPatternRootViewController.swift */,
-				E891FD6C212E8886003FD09D /* Template */,
+				E891FD6C212E8886003FD09D /* Template(模板) */,
 			);
 			path = "DesignPattern基础";
 			sourceTree = "<group>";
 		};
-		E891FD6C212E8886003FD09D /* Template */ = {
+		E891FD6C212E8886003FD09D /* Template(模板) */ = {
 			isa = PBXGroup;
 			children = (
 				E891FD6D212E88B7003FD09D /* TemplatePatternViewController.swift */,
 			);
-			path = Template;
+			path = "Template(模板)";
 			sourceTree = "<group>";
 		};
 		E8CDF7CA212D5509003AF7CE /* Architecture架构 */ = {
@@ -458,6 +495,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A01780A21A44246000BC160 /* index2.html in Resources */,
+				7A01780621A3F6A5000BC160 /* index.html in Resources */,
+				7A01780C21A4425E000BC160 /* index3.html in Resources */,
 				E815AFE721115365001E0E10 /* LaunchScreen.storyboard in Resources */,
 				E815AFE421115365001E0E10 /* Assets.xcassets in Resources */,
 			);
@@ -535,6 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A985C9D21CCD3F800A333F2 /* MethodSwizzleViewController.swift in Sources */,
 				E8467620211198110042CC17 /* JackzcBaseAppConst.swift in Sources */,
 				E891FD6E212E88B7003FD09D /* TemplatePatternViewController.swift in Sources */,
 				E8CDF7E2212D5509003AF7CE /* MVPDataSource.swift in Sources */,
@@ -542,11 +583,13 @@
 				E8CDF7E0212D5509003AF7CE /* MVCViewController.swift in Sources */,
 				E846762421119DB50042CC17 /* VariousCellHandle.swift in Sources */,
 				7A01780121A02B6B000BC160 /* HybridAppRootViewController.swift in Sources */,
-				7A01780421A3BD6D000BC160 /* SJWebViewViewController.swift in Sources */,
+				7A01780821A441B9000BC160 /* UIWebView2ViewController.swift in Sources */,
+				7A01780421A3BD6D000BC160 /* UIWebViewViewController.swift in Sources */,
 				E891FD69212E7D9E003FD09D /* DesignPatternRootViewController.swift in Sources */,
 				E86FD013212FADE200CEC9A1 /* String+Extension.swift in Sources */,
 				E8CDF7F0212D5510003AF7CE /* FrameWorkRootViewController.swift in Sources */,
 				E8CDF7E5212D5509003AF7CE /* MVPTableViewCell.swift in Sources */,
+				7A985C9B21CCD3A900A333F2 /* SwiftBaseRootViewController.swift in Sources */,
 				E815B00B211154B9001E0E10 /* AppRootViewController.swift in Sources */,
 				E8467622211198F60042CC17 /* AppBaseNavigationController.swift in Sources */,
 				E8CDF7EB212D5509003AF7CE /* MVVMViewController.swift in Sources */,
@@ -558,6 +601,7 @@
 				E86FD011212FADA100CEC9A1 /* UITableView+Extension.swift in Sources */,
 				E8CDF7EA212D5509003AF7CE /* MVViewModel.swift in Sources */,
 				E846761E21118F750042CC17 /* VariousCellViewController.swift in Sources */,
+				7A01780F21A44275000BC160 /* UIWebView3ViewController.swift in Sources */,
 				E8CDF7DD212D5509003AF7CE /* ArchitectureRootViewController.swift in Sources */,
 				E815AFDD2111535F001E0E10 /* AppDelegate.swift in Sources */,
 				E8CDF7E3212D5509003AF7CE /* MVPModel.swift in Sources */,

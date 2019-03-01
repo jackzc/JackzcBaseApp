@@ -191,8 +191,6 @@ extension RXSwiftViewController{
             }).disposed(by: dispose)
     }
     
-    
-    
 }
 
 extension RXSwiftViewController{

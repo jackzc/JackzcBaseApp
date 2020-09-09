@@ -26,7 +26,8 @@ class MVTableViewCell: UITableViewCell {
             maker.top.equalToSuperview().offset(10)
             maker.bottom.equalToSuperview().offset(-10)
             maker.width.equalTo(100)
-            maker.height.equalTo(30)
+            let height =  maker.height.equalTo(30).constraint
+            height.layoutConstraints.first?.priority = UILayoutPriority.defaultLow
         }
     }
     

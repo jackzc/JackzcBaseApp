@@ -14,6 +14,7 @@ class AppBaseViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -14,14 +14,27 @@ import RxCocoa
 class RXSwiftViewController: AppBaseViewController {
     
     var tableArray:[StudentModel] = []
-    let dispose = DisposeBag()
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "RXSwift"
         
 //        self.testObservable()
-        self.testObservable1()
+//        self.testObservable1()
+        getRepo("").subscribe(onSuccess: { json in
+            print("JOSN", json)
+        },onError: { (error) in
+            print("Error: ", error)
+        }).disposed(by: disposeBag)
+            
+//        let rxData: Observable<Data>
+//        rxData.subscribeOn(ConcurrentDispatchQueueScheduler(qos: .userInitiated))
+//            .observeOn(MainScheduler.instance)
+//            .subscribe({ data in
+//
+//            }).disposed(by: disposeBag)
+        
        ///==============
 //        self.textRXForTableView()
 //        self.testAsynvSubject()
@@ -38,6 +51,11 @@ class RXSwiftViewController: AppBaseViewController {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "rootBaseCellID")
         return tableView
+    }()
+    
+    lazy var userNameTextField: UITextField = {
+        let textField = UITextField()
+        return textField;
     }()
 
     override func didReceiveMemoryWarning() {
@@ -69,6 +87,31 @@ extension RXSwiftViewController{
         }
     }
     
+    //Single
+    func getRepo(_ repo: String) -> Single<[String: Any]> {
+        return Single<[String: Any]>.create { single in
+            let url = URL(string: "https://api.github.com/repos/\(repo)")!
+            let task = URLSession.shared.dataTask(with: url){
+                data, _, error in
+                if let error = error {
+                    single(.error(error))
+                    return
+                }
+                guard let data = data,
+                     let json = try? JSONSerialization.jsonObject(with: data, options: .mutableLeaves),
+                     let result = json as? [String: Any] else{
+//                        single(.error(error))
+                     return
+                }
+                single(.success(result))
+            }
+            task.resume()
+            return Disposables.create {
+                task.cancel()
+            }
+        }
+    }
+    
     //Int
     func testObservable1() -> Void {
         let numbers: Observable<Int> = Observable.create { (observer) -> Disposable in
@@ -80,7 +123,7 @@ extension RXSwiftViewController{
         
         numbers.subscribe(onNext:{ element in
             print("obsevable For Int \(element)")
-        }).disposed(by: dispose)
+        }).disposed(by: disposeBag)
     }
 }
 
@@ -172,7 +215,7 @@ extension RXSwiftViewController{
         let model = Variable<StudentModel?>(nil)
         model.asObservable().subscribe({ model in
             //更新UI
-        }).disposed(by: dispose)
+        }).disposed(by: disposeBag)
         model.value = StudentModel(name: "木暮公延", age: 16)
     }
     
@@ -188,7 +231,7 @@ extension RXSwiftViewController{
              return temperature > 33.0
             }.subscribe( onNext: { temperature in
                 print("高温：\(temperature)度")
-            }).disposed(by: dispose)
+            }).disposed(by: disposeBag)
     }
     
 }
@@ -225,13 +268,13 @@ extension RXSwiftViewController{
             (row, model, cell) in
             
             cell.textLabel?.text = model.description
-            }.disposed(by: dispose)
+            }.disposed(by: disposeBag)
         
         //        tableArray.bind(to: tableView.rx.items(cellIdentifier: <#T##String#>))
         
         tableView.rx.modelSelected(StudentModel.self).subscribe { (model) in
             print("点击了\(String(describing: model.element?.description))")
-            }.disposed(by: dispose)
+            }.disposed(by: disposeBag)
     }
     
 }

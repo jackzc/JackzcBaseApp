@@ -25,6 +25,8 @@ class AppRootViewController: AppBaseRootViewController {
                     "3.常用框架":FrameWorkRootViewController.self,
                     "4.设计模式":DesignPatternRootViewController.self,
                     "5.HybridApp":HybridAppRootViewController.self,
+                    "6.GPUImage使用":GPUImageAppRootViewController.self,
+                    "7.Charts图表":ChartsAppRootViewController.self,
                     "Test":AppBaseViewController.self]
         }
     }
